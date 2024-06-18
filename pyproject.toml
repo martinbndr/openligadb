@@ -1,10 +1,10 @@
 [project]
-name = "py_pterodactyl"
-description = "API wrapper for the Pterodactyl panel api"
+name = "openligadb"
+description = "API wrapper for the openliga api."
 requires-python = ">=3.10"
 license = {text = "MIT"}
 readme = "README.md"
-keywords = ["pterodactyl", "pterodactyl api", "api", "api wrapper"]
+keywords = ["openligadb", "openligadb api", "api", "api wrapper","sports","sport api", "football","football api"]
 authors = [
     { name = "martinbndr" }
 ]
@@ -20,11 +20,11 @@ classifiers = [
 dynamic = ["dependencies", "version"]
 
 [tool.setuptools.dynamic]
-version = {attr = "cookiebot.__version__"}
+version = {attr = "openligadb.__version__"}
 dependencies = {file = "requirements.txt"}
 
 [project.urls]
-GitHub = "https://github.com/martinbndr/py_pterodactyl"
+GitHub = "https://github.com/martinbndr/openligadb"
 
 [build-system]
 requires = ["setuptools>=61.0"]
