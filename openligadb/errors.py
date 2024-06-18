@@ -1,0 +1,3 @@
+
+class OpenLigaNotFound(Exception):
+    pass

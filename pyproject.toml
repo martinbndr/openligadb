@@ -1,0 +1,31 @@
+[project]
+name = "py_pterodactyl"
+description = "API wrapper for the Pterodactyl panel api"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["pterodactyl", "pterodactyl api", "api", "api wrapper"]
+authors = [
+    { name = "martinbndr" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "cookiebot.__version__"}
+dependencies = {file = "requirements.txt"}
+
+[project.urls]
+GitHub = "https://github.com/martinbndr/py_pterodactyl"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
